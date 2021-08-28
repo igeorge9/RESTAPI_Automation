@@ -1,0 +1,114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-27T16:00:47.956Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7628875200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.steps.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Delete the place added using DeletePlaceAPI",
+        "description": "",
+        "id": "validating-place-api-s;delete-the-place-added-using-deleteplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2993600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "DeletePlace Payload",
+            "match": {
+              "location": "cucumber.steps.stepDefinition.delete_place_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2469963400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user calls \"deletePlaceAPI\" with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 33
+                }
+              ],
+              "location": "cucumber.steps.stepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1987300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "cucumber.steps.stepDefinition.the_api_call_got_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54580500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 29
+                }
+              ],
+              "location": "cucumber.steps.stepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/com/features/placeValidations.feature",
+    "tags": []
+  }
+]
